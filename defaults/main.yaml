@@ -1,1 +1,15 @@
 ---
+
+traefik_version: "{{ traefik_app_version }}"
+traefik_image: "traefik:v{{ traefik_version }}"
+
+traefik_app_dir: "{{ apps_root_dir }}/traefik"
+traefik_log_dir: "{{ traefik_app_dir }}/logs"
+traefik_access_log_file: "{{ traefik_log_dir }}/access.log"
+traefik_app_config_dir: "{{ traefik_app_dir }}/config"
+
+traefik_config_path: "{{ traefik_app_config_dir }}/traefik.yaml"
+
+traefik_acme_email: "{{ var_acme_email or 'example@example.com' }}"
+
+traefik_host_name: "{{ traefik_dashboard_host_name }}"
