@@ -14,6 +14,7 @@ Role Variables
 `apps_root_dir` - Root directory for host application. `/opt/apps` by default.
 `traefik_app_version` - Version of Traefik application
 `traefik_dashboard_host_name` - Traefik dashboard DNS name
+`traefik_acme_email` - Email for Let's Encrypt
 
 Dependencies
 ------------
